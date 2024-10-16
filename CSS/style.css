@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+body{
+    background: #cccf;
+    margin: 0;
+}
+.contenedor_general{
+    /*buscar el contrario de grid*/
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-gap: 15px;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px 1fr;
+}
+.titulo_ruleta{
+    /*si en la caja principal le puese display grid todas las cajas de adentro tienen que ir con el mismo*/
+    display: grid;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    height: 65px;
+    width: 100vw;
+    background-clip: text;
+    color: #afa;
+    font-family: "Secular One", sans-serif;
+}
+.contenedor_casillas{
+    height: 350px;
+    width: 50vw;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    /* grid-template-columns: 1fr; */
+    /* grid-template-rows: 100px 55px; */
+}
